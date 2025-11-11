@@ -10,7 +10,7 @@ class GainDSP
 public:
     void processBlock(float* block, int blockSize) const;
 
-    float dBToLinearGain(float dB) const;
+    float dBToLinearCoefficient(float dB) const;
 
     // Getters / Setters
     [[nodiscard]] float getGainDB() const { return m_gainDB; };
